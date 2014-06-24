@@ -19,7 +19,8 @@ tomcat_config::instance { 'tomcat1':
     shutdown_port => '8005',
     ajp_port      => '8009',
     redirect_port => '8843',
-    # Create a 'setenv.sh'/'setenv.bat' file to add `-Dspring.profiles.active=<%= @environment %>' to JAVA_OPTS
+    # Create a 'setenv.sh'/'setenv.bat' file to add 
+    # `-Dspring.profiles.active=<%= @environment %>' to JAVA_OPTS
     support_spring_profiles => true,
 }
 
